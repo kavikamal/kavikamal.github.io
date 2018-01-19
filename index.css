@@ -4,4 +4,10 @@
 .ib
   {
     display:  inline-block;
-  }
+  } 
+div#imgid {
+width: 50%;
+}
+.funFactStyle1{
+  font: "Comic Sans MS";
+}
