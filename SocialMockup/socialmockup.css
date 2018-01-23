@@ -1,3 +1,7 @@
+body{
+    font-family: Courier New, Courier, monospace;
+}
+
 #socialHeader {
     height: 300px;
     width: 850px;
@@ -18,15 +22,23 @@
 }
 
 #buttons {
-
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 230px;
+   
 }
-
+.image1{
+    float: left;
+    height: 42px;
+    width: 50px;
+}
 #links {   
     margin: 0 auto;
     position: relative;
     width: 850px;
     height: 70px;
-    padding-left: 460px;
+    padding-left: 400px;
     border-right: 2px gray;
 
 }
@@ -46,18 +58,23 @@
     margin: 0;
  }
 
- a {
+ a:link {
      border-right: 2px gray;
      text-decoration: none;
      color: black;
  }
+ a:hover{
+     text-decoration:underline blue ;
+ }
  .list{
      list-style-type: none;
+     border: 2px ;
      
  }
 
  li{
      float: left;
-     width: 10%;
+     width: 100px;
+     padding-right: 10px;
      border-right: 2px gray;
  }
