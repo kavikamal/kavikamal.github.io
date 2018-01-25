@@ -1,0 +1,19 @@
+#pictureframe {
+    position: relative;
+    float: left;
+}
+#trophy {
+    position: absolute; 
+    left: 350px; 
+    top: 200px;
+}
+
+#pictureframe1 {
+    position: relative;
+    float: left;
+}
+#trophy1 {
+    position: absolute; 
+    left: 100px; 
+    top: 200px;
+}
