@@ -8,16 +8,17 @@
     .container{
         display:flex;
         flex-direction: row;
+        height:100vh;
     }
     .contentClass{
-      width:25%;
+      flex-basis:25%;
       border-color:grey;
       border-style: groove;
       height:40% ;   
     }
     .imageClass{
-        Width:75%;
-        flex-wrap: wrap;
+      flex-basis:75%;
+      flex-wrap: wrap;
     }
     
   }
@@ -34,14 +35,14 @@
         flex-direction: row;
     }
     .contentClass{
-      width:25%;
+      flex-basis:25%;
       border-color:grey;
       border-style: groove;
       height:40% ;
     }
     .imageClass{
-        Width:75%;
-        flex-wrap: wrap;
+      flex-basis:75%;
+      flex-wrap: wrap;
     }
     
   }
@@ -62,19 +63,19 @@
       width:100%;
       border-color:grey;
       border-style: groove;
-      height:20% ;
+      flex-basis:20% ;
     }
     .imageClass{
       display:flex;
       flex-direction: row;
       width:100%;  
-      flex-wrap: wrap;
+      
     }
     .imgcol1{
-      width:50%;
+      flex-basis:50%;
     }
     .imgcol2{
-      width:50%;
+      flex-basis:50%;
     }
     
   }
@@ -92,17 +93,15 @@
         justify-content:space-between;
     }
     .contentClass{
-      width:25%;
+      flex-basis:25%;
       border-color:grey;
       border-style: groove;
       height:40% ;
     }
     .imageClass{
-        width:75%;
-        
-        flex-wrap: wrap;
-    }
-    
+      flex-basis:75%;
+      flex-wrap: wrap;
+    } 
   }
   
   /* 
@@ -118,15 +117,14 @@
         justify-content:space-between;
     }
     .contentClass{
-      width:25%;
+      flex-basis:25%;
       border-color:grey;
       border-style: groove;
       height:40% ;
     }
     .imageClass{
-        Width:75%;
-       
-        flex-wrap: wrap;
+      flex-basis:75%;
+      flex-wrap: wrap;
     }
     
   }
@@ -142,27 +140,24 @@
     .container{
         display:flex;
         flex-direction: column;
-        justify-content:space-between;
-        
+        justify-content:space-between; 
     }
     .contentClass{
-      width:100%;
       border-color:grey;
       border-style: groove;
-      height:20%;
+      flex-basis:20%;
     }
     .imageClass{
       display:flex;
-      flex-direction: row;
-      width:100%;  
+      flex-direction: row; 
+      flex-basis:80%;
       
-      flex-wrap: wrap;
     }
     .imgcol1{
-      width:50%;
+      flex-basis:50%;
     }
     .imgcol2{
-      width:50%;
+      flex-basis:50%;
     }
   }
 
