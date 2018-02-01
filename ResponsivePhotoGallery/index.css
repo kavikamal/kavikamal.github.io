@@ -11,7 +11,9 @@
     }
     .contentClass{
       width:30%;
-    
+      border-color:grey;
+      border-style: groove;
+      height:40% ;   
     }
     .imageClass{
         Width:70%;
@@ -32,7 +34,9 @@
     }
     .contentClass{
       width:30%;
-    
+      border-color:grey;
+      border-style: groove;
+      height:40% ;
     }
     .imageClass{
         Width:70%;
@@ -52,11 +56,13 @@
         flex-direction: column
     }
     .contentClass{
-      width:100%  
-    
+      width:100%;
+      border-color:grey;
+      border-style: groove;
+      height:20% ;
     }
     .imageClass{
-      width:100%  
+      width:100%;  
     }
     
   }
@@ -74,7 +80,9 @@
     }
     .contentClass{
       width:30%;
-    
+      border-color:grey;
+      border-style: groove;
+      height:40% ;
     }
     .imageClass{
         Width:70%;
@@ -95,7 +103,9 @@
     }
     .contentClass{
       width:30%;
-    
+      border-color:grey;
+      border-style: groove;
+      height:40% ;
     }
     .imageClass{
         Width:70%;
@@ -118,7 +128,9 @@
     }
     .contentClass{
       width:100%;
-    
+      border-color:grey;
+      border-style: groove;
+      height:20%;
     }
     .imageClass{
         Width:100%;
