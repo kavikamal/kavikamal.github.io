@@ -4,8 +4,10 @@
       Output: product line totals (double)
 */
 function calculateProdTotal (price, quantity) {
-    return price * quantity;   // replace this!
-}
+   
+    return price * quantity;
+    
+} 
 
 /* 2. Complete the function below to calculate gross cart totals
       use the array of product line total argument
@@ -29,7 +31,9 @@ function calculateSubtotal (prodTotals) {
       Output: added taxes for the cart (double)
 */
 function calculateTaxes(grossTotal, taxRate) {
-    return grossTotal*taxRate;   
+    var tax=0.0;
+    tax=grossTotal*taxRate;
+    return tax;
 }
 
 /* 4. Complete the function below to calculate total
@@ -39,7 +43,9 @@ function calculateTaxes(grossTotal, taxRate) {
       Output: total cart amount inclusive of shipping and taxes (double)
 */
 function calculateTotal (grossTotal, addedShipping, addedTax) {
-    return (grossTotal+addedShipping+addedTax);   // replace this!
+    var calTotal=0.0;
+    calTotal=grossTotal+addedShipping+addedtax;
+    return calTotal;
 }
 
 /* 5. We want to inform the users when certain items run out of stock
@@ -68,20 +74,20 @@ function calculateTotal (grossTotal, addedShipping, addedTax) {
 function updateProdAvailability(product, selected, availability) {
     var label="";
     var prodAvailability="";
-   
     if (selected<availability)
          {
-         label= product + " are available";
+         label= product + " is available";
          prodAvailability="AVAILABLE";
          }
-    else if (selected>availability){
-         label= product + "are out of stock";
+    if (availability==0){
+         label= product + "is out of stock";
          prodAvailability="OUT_OF_STOCK";
          }   
-    else if (selected==availability){
-         label= product + "  limited Supply";
+    if (selected>availability){
+         label= product + "availabilty is limited";
          prodAvailability="LIMITED_SUPPLY";
         }
+     
     updateProdAvailabilityLabel(product, label, prodAvailability);
     return;
 }
