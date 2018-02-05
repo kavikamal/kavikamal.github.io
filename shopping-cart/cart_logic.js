@@ -78,7 +78,7 @@ function updateProdAvailability(product, selected, availability) {
          label= product + " are out of stock";
          availability1=OUT_OF_STOCK;
          }   
-    else if ((availability-selected)<=5){
+    else if ((availability-selected)<=5){  
          label= product + "  limited Supply";
          availability1=LIMITED_SUPPLY;
         }
