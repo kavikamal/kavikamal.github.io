@@ -1,0 +1,23 @@
+.bodyClass{
+    width: 900px;
+    margin: 0 auto;
+}
+.mainClass{
+    background-color: rgb(75, 187, 187)
+}
+#townHeader {
+    background-image: url("../images/carmel.jpg");
+    background-repeat:no-repeat;
+    background-size:100%;
+    height: 500px;
+    width: 900px;
+    margin: 0 auto;
+}
+#navTown
+{
+    font-family: fantasy;
+    font-size: 40px;
+    width: 900px;
+    
+    margin: 0 auto;
+}

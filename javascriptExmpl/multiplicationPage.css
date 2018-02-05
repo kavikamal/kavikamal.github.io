@@ -1,0 +1,24 @@
+.tableHeadingClass1{
+   background-color: teal;
+   
+}
+.tableHeadingClass2{
+    background-color:yellow ;   
+ }
+ .tableHeadingClass3{
+    background-color: pink;  
+ }
+ .tableHeadingClass4{
+    background-color:blue;   
+ }
+
+.multiTableClass{
+    border:1px solid
+}
+
+.multiTableClass td, .multiTableClass th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.multiTableClass tr:nth-child(even){background-color: #f2f2f2;}
