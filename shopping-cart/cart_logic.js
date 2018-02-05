@@ -67,21 +67,21 @@ function calculateTotal (grossTotal, addedShipping, addedTax) {
 */
 function updateProdAvailability(product, selected, availability) {
     var label="";
-    var prodAvailability="";
+    var availability1;
    
-    if (selected<availability)
+    if ((availability-selected)>5)
          {
          label= product + " are available";
-         prodAvailability="AVAILABLE";
+         availability1=AVAILABLE;
          }
-    else if (selected>availability){
-         label= product + "are out of stock";
-         prodAvailability="OUT_OF_STOCK";
-         }   
     else if (selected==availability){
+         label= product + " are out of stock";
+         availability1=OUT_OF_STOCK;
+         }   
+    else if ((availability-selected)<=5){
          label= product + "  limited Supply";
-         prodAvailability="LIMITED_SUPPLY";
+         availability1=LIMITED_SUPPLY;
         }
-    updateProdAvailabilityLabel(product, label, prodAvailability);
+    updateProdAvailabilityLabel(product, label, availability1);
     return;
 }
