@@ -8,23 +8,27 @@
    flex-wrap: wrap;
    border: 1px black;
    height: 200px;
-
 }
 
 .headingClass{
     font-family: fantasy;
-    background-color: teal;   
+    background-color: rgb(70, 177, 177);  
+     
  }
  .subHeadingClass{
      font-family: cursive;
-     color: crimson;
+     color:dodgerblue;
  }
  .drawRect{
     height: 100px;
     width:20px;
     background-color: gray;
  }
+ .drawRect1{
+    height: 20px;
+    background-color: gray;
+ }
  .spaceClass{
-    height: 100px;
+    height: 10px;
     width:10px;
  }

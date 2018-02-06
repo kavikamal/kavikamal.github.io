@@ -1,6 +1,6 @@
 
 function mainFunction(){
-   var sampleArray = randomArray(100,1000);
+   var sampleArray = randomArray(50,500);
    kata1();
    kata2();
    kata3();
@@ -21,9 +21,9 @@ function mainFunction(){
    kata18(sampleArray);
    kata19();
    kata20();
-   kata21();
-   kata22();
-   kata23();
+   kata21(sampleArray);
+   kata22(sampleArray);
+   kata23(sampleArray);
 }
 function randomArray(length, max) {
     return Array.apply(null, Array(length)).map(function() {
@@ -37,7 +37,7 @@ function kata1(){
         newElement.className = "articleClass";
         let headingElement= document.createElement("h1");
         headingElement.className = "subHeadingClass";
-        headingElement.appendChild(document.createTextNode("Display the numbers from 1 to 20."));
+        headingElement.appendChild(document.createTextNode("1--Display the numbers from 1 to 20."));
         newElement.appendChild(headingElement);
         var tmpStr="";
         
@@ -57,7 +57,7 @@ function kata2(){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the even numbers from 1 to 20. (2, 4, 6, ..., 18, 20)"));
+    headingElement.appendChild(document.createTextNode("2--Display the even numbers from 1 to 20. (2, 4, 6, ..., 18, 20)"));
     newElement.appendChild(headingElement);
     let tmpStr="";
     
@@ -77,7 +77,7 @@ function kata3(){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the odd numbers from 1 to 20. (1, 3, 5, ..., 17, 19)"));
+    headingElement.appendChild(document.createTextNode("3--Display the odd numbers from 1 to 20. (1, 3, 5, ..., 17, 19)"));
     newElement.appendChild(headingElement);
     let tmpStr="";
     
@@ -96,7 +96,7 @@ function kata4(){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the multiples of 5 up to 100. (5, 10, 15, ..., 95, 100)"));
+    headingElement.appendChild(document.createTextNode("4--Display the multiples of 5 up to 100. (5, 10, 15, ..., 95, 100)"));
     newElement.appendChild(headingElement);
     let tmpStr="";
     
@@ -115,7 +115,7 @@ function kata5(){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the square numbers up to 100. (1, 4, 9, ..., 81, 100)"));
+    headingElement.appendChild(document.createTextNode("5--Display the square numbers up to 100. (1, 4, 9, ..., 81, 100)"));
     newElement.appendChild(headingElement);
     let tmpStr="";
     let check=true;
@@ -139,7 +139,7 @@ function kata6(){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the numbers counting backwards from 20 to 1. (20, 19, 18, ..., 2, 1)"));
+    headingElement.appendChild(document.createTextNode("6--Display the numbers counting backwards from 20 to 1. (20, 19, 18, ..., 2, 1)"));
     newElement.appendChild(headingElement);
     var tmpStr="";
     
@@ -158,7 +158,7 @@ function kata7(){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the even numbers counting backwards from 20. (20, 18, 16, ..., 4, 2)"));
+    headingElement.appendChild(document.createTextNode("7--Display the even numbers counting backwards from 20. (20, 18, 16, ..., 4, 2)"));
     newElement.appendChild(headingElement);
     var tmpStr="";
     
@@ -177,7 +177,7 @@ function kata8(){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the odd numbers from 20 to 1, counting backwards. (19, 17, 15, ..., 3, 1)"));
+    headingElement.appendChild(document.createTextNode("8--Display the odd numbers from 20 to 1, counting backwards. (19, 17, 15, ..., 3, 1)"));
     newElement.appendChild(headingElement);
     var tmpStr="";
     
@@ -196,7 +196,7 @@ function kata9(){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the multiples of 5, counting down from 100. (100, 95, 90, ..., 10, 5)"));
+    headingElement.appendChild(document.createTextNode("9--Display the multiples of 5, counting down from 100. (100, 95, 90, ..., 10, 5)"));
     newElement.appendChild(headingElement);
     var tmpStr="";
      for (let i=100;i>=5;i=i-5){
@@ -214,7 +214,7 @@ function kata10(){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the square numbers, counting down from 100. (100, 81, 64, ..., 4, 1)"));
+    headingElement.appendChild(document.createTextNode("10--Display the square numbers, counting down from 100. (100, 81, 64, ..., 4, 1)"));
     newElement.appendChild(headingElement);
     let tmpStr="";
     for (let i=10;i>=1;i--)
@@ -233,7 +233,7 @@ function kata11(smplArr){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the 20 elements of sampleArray. (469, 755, 244, ..., 940, 472)"));
+    headingElement.appendChild(document.createTextNode("11--Display the 20 elements of sampleArray. (469, 755, 244, ..., 940, 472)"));
     newElement.appendChild(headingElement);
     let tmpStr="";
     for (let i=0;i<20;i++)
@@ -252,7 +252,7 @@ function kata12(smplArr){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display all the even numbers contained in sampleArray. (244, 758, 450, ..., 940, 472)"));
+    headingElement.appendChild(document.createTextNode("12--Display all the even numbers contained in sampleArray. (244, 758, 450, ..., 940, 472)"));
     newElement.appendChild(headingElement);
     let tmpStr="";
     for (let i=0,j=0;i<smplArr.length && j<20;i++)
@@ -274,7 +274,7 @@ function kata13(smplArr){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display all the odd numbers contained in sampleArray. (469, 755, 245, ..., 179, 535)"));
+    headingElement.appendChild(document.createTextNode("13--Display all the odd numbers contained in sampleArray. (469, 755, 245, ..., 179, 535)"));
     newElement.appendChild(headingElement);
     let tmpStr="";
     for (let i=0,j=0;i<smplArr.length && j<20;i++)
@@ -296,7 +296,7 @@ function kata14(smplArr){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the square of each element in sampleArray. (219961, 570025, ..., 222784)"));
+    headingElement.appendChild(document.createTextNode("14--Display the square of each element in sampleArray. (219961, 570025, ..., 222784)"));
     newElement.appendChild(headingElement);
     let tmpStr="";
     for (let i=0;i<20;i++)
@@ -315,7 +315,7 @@ function kata15(){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the sum of all the numbers from 1 to 20."));
+    headingElement.appendChild(document.createTextNode("15--Display the sum of all the numbers from 1 to 20."));
     newElement.appendChild(headingElement);
     var tmpStr="";
     let j=0;
@@ -335,7 +335,7 @@ function kata16(smplArr){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the sum of all the elements in sampleArray."));
+    headingElement.appendChild(document.createTextNode("16--Display the sum of all the elements in sampleArray."));
     newElement.appendChild(headingElement);
     var tmpStr="";
     let j=0;
@@ -355,7 +355,7 @@ function kata17(smplArr){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the smallest element in sampleArray."));
+    headingElement.appendChild(document.createTextNode("17--Display the smallest element in sampleArray."));
     newElement.appendChild(headingElement);
     var tmpStr="";
     let j=smplArr[0];
@@ -376,7 +376,7 @@ function kata18(smplArr){
     newElement.className = "articleClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display the largest element in sampleArray."));
+    headingElement.appendChild(document.createTextNode("18--Display the largest element in sampleArray."));
     newElement.appendChild(headingElement);
     var tmpStr="";
     let j=smplArr[0];
@@ -397,7 +397,7 @@ function kata19(){
     newElement.className = "sectionClass";
     let headingElement= document.createElement("h1");
     headingElement.className = "subHeadingClass";
-    headingElement.appendChild(document.createTextNode("Display 20 solid gray rectangles, each 20px high and 100px wide."));
+    headingElement.appendChild(document.createTextNode("19--Display 20 solid gray rectangles, each 20px high and 100px wide."));
     
     var destination = document.getElementById("mainSection");
     destination.appendChild(headingElement);
@@ -416,19 +416,110 @@ function kata19(){
     
      
 }
-// Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above).
+//20--Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above).
 function kata20(){
-
+    let newElement = document.createElement("section");
+    newElement.setAttribute("id", "section2");
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("20--Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above)."));
+    
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(headingElement);
+    destination.appendChild(newElement);
+     
+    destination = document.getElementById("section2");
+    let widthDiv=105;
+    for (i=0;i<20;i++){
+        let newElement1 = document.createElement("div");
+        let newElement2 = document.createElement("div");
+        newElement1.style.width = widthDiv+'px';
+        widthDiv+=5;
+         newElement1.className = "drawRect1";
+        newElement2.className="spaceClass";
+        destination.appendChild(newElement1);
+        destination.appendChild(newElement2);
+    }
+    
 }
-// Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.
-function kata21(){
-
+//21--Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.
+function kata21(smplArr){
+    let newElement = document.createElement("section");
+    newElement.setAttribute("id", "section3");
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("21--Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray."));
+    
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(headingElement);
+    destination.appendChild(newElement);
+     
+    destination = document.getElementById("section3");
+    let widthDiv;
+    for (i=0;i<20;i++){
+        let newElement1 = document.createElement("div");
+        let newElement2 = document.createElement("div");
+        widthDiv=smplArr[i];
+        newElement1.style.width = widthDiv+'px';
+        newElement1.className = "drawRect1";
+        newElement2.className="spaceClass";
+        destination.appendChild(newElement1);
+        destination.appendChild(newElement2);
+    }
+    
 }
-// As in #21, but alternate colors so that every other rectangle is red.
-function kata22(){
-
+//22--As in #21, but alternate colors so that every other rectangle is red.
+function kata22(smplArr){
+    let newElement = document.createElement("section");
+    newElement.setAttribute("id", "section4");
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("22--As in #21, but alternate colors so that every other rectangle is red."));
+    
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(headingElement);
+    destination.appendChild(newElement);
+     
+    destination = document.getElementById("section4");
+    let widthDiv;
+    for (i=0;i<20;i++){
+        let newElement1 = document.createElement("div");
+        let newElement2 = document.createElement("div");
+        widthDiv=smplArr[i];
+        newElement1.style.width = widthDiv+'px';
+        if (i%2!=0)
+         newElement1.style.backgroundColor="red";
+        newElement1.className = "drawRect1";
+        newElement2.className="spaceClass";
+        destination.appendChild(newElement1);
+        destination.appendChild(newElement2);
+    }
+    
 }
-// As in #21, but color the rectangles with even widths red. 
-function kata23(){
-
+//23--As in #21, but color the rectangles with even widths red. 
+function kata23(smplArr){
+    let newElement = document.createElement("section");
+    newElement.setAttribute("id", "section5");
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("22--As in #21, but alternate colors so that every other rectangle is red."));
+    
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(headingElement);
+    destination.appendChild(newElement);
+     
+    destination = document.getElementById("section5");
+    let widthDiv;
+    for (i=0;i<20;i++){
+        let newElement1 = document.createElement("div");
+        let newElement2 = document.createElement("div");
+        widthDiv=smplArr[i];
+        newElement1.style.width = widthDiv+'px';
+        if (widthDiv%2==0)
+          newElement1.style.backgroundColor="red";
+        newElement1.className = "drawRect1";
+        newElement2.className="spaceClass";
+        destination.appendChild(newElement1);
+        destination.appendChild(newElement2);
+    }
 }
