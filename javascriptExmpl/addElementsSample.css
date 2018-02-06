@@ -1,0 +1,13 @@
+.articleClass{
+    font-family: Courier New, Courier, monospace;
+
+}
+
+.headingClass{
+    font-family: fantasy;
+    background-color: teal;   
+ }
+ .subHeadingClass{
+     font-family: cursive;
+     color: coral;
+ }
