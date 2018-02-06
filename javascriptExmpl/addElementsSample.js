@@ -1,5 +1,6 @@
 
 function mainFunction(){
+   var sampleArray = randomArray(100,1000);
    kata1();
    kata2();
    kata3();
@@ -10,21 +11,25 @@ function mainFunction(){
    kata8();
    kata9();
    kata10();
-   kata11();
-   kata12();
-   kata13();
-   kata14();
-   kata15();
-   kata16();
-   kata17();
-   kata18();
+   kata11(sampleArray);
+   kata12(sampleArray);
+   kata13(sampleArray);
+   kata14(sampleArray);
+   kata15(sampleArray);
+   kata16(sampleArray);
+   kata17(sampleArray);
+   kata18(sampleArray);
    kata19();
    kata20();
    kata21();
    kata22();
    kata23();
 }
-
+function randomArray(length, max) {
+    return Array.apply(null, Array(length)).map(function() {
+        return Math.round(Math.random() * max);
+    });
+}
 // Display the numbers from 1 to 20. (1, 2, 3, ...,19, 20)
 function kata1(){
        
@@ -37,9 +42,9 @@ function kata1(){
         var tmpStr="";
         
         for (let i=1;i<=20;i++){
-            tmpStr+=i + " ";
+            tmpStr+=i + ", ";
         }
-        
+        tmpStr=tmpStr.slice(0, -2);
         var newText = document.createTextNode( tmpStr);
         newElement.appendChild(newText);
         var destination = document.getElementById("mainSection");
@@ -57,9 +62,9 @@ function kata2(){
     let tmpStr="";
     
     for (let i=2;i<=20;i=i+2){
-        tmpStr+=i + " ";
+        tmpStr+=i + ", ";
     }
-    
+    tmpStr=tmpStr.slice(0, -2);
     let newText = document.createTextNode(tmpStr);
     newElement.appendChild(newText);
     var destination = document.getElementById("mainSection");
@@ -77,9 +82,9 @@ function kata3(){
     let tmpStr="";
     
     for (let i=1;i<=20;i=i+2){
-        tmpStr+=i + " ";
+        tmpStr+=i + ", ";
     }
-    
+    tmpStr=tmpStr.slice(0, -2);
     let newText = document.createTextNode(tmpStr);
     newElement.appendChild(newText);
     var destination = document.getElementById("mainSection");
@@ -96,9 +101,9 @@ function kata4(){
     let tmpStr="";
     
     for (let i=5;i<=100;i=i+5){
-        tmpStr+=i + " ";
+        tmpStr+=i + ", ";
     }
-    
+    tmpStr=tmpStr.slice(0, -2);
     let newText = document.createTextNode(tmpStr);
     newElement.appendChild(newText);
     var destination = document.getElementById("mainSection");
@@ -117,11 +122,12 @@ function kata5(){
     let tmpNumber=1
     while (check){
         perfectSquareNumber=tmpNumber*tmpNumber
-        tmpStr+= perfectSquareNumber + " ";
+        tmpStr+= perfectSquareNumber + ", ";
         tmpNumber=tmpNumber+1;
         if (perfectSquareNumber>=100)
            check =false;
     }
+    tmpStr=tmpStr.slice(0, -2);
     let newText = document.createTextNode(tmpStr);
     newElement.appendChild(newText);
     var destination = document.getElementById("mainSection");
@@ -138,9 +144,9 @@ function kata6(){
     var tmpStr="";
     
     for (let i=20;i>=1;i--){
-        tmpStr+=i + " ";
+        tmpStr+=i + ", ";
     }
-    
+    tmpStr=tmpStr.slice(0, -2);
     var newText = document.createTextNode( tmpStr);
     newElement.appendChild(newText);
     var destination = document.getElementById("mainSection");
@@ -148,55 +154,267 @@ function kata6(){
 }
 // Display the even numbers counting backwards from 20. (20, 18, 16, ..., 4, 2)
 function kata7(){
-
+    let newElement = document.createElement("article");
+    newElement.className = "articleClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display the even numbers counting backwards from 20. (20, 18, 16, ..., 4, 2)"));
+    newElement.appendChild(headingElement);
+    var tmpStr="";
+    
+    for (let i=20;i>1;i=i-2){
+        tmpStr+=i + ", ";
+    }
+    tmpStr=tmpStr.slice(0, -2);
+    var newText = document.createTextNode( tmpStr);
+    newElement.appendChild(newText);
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(newElement);
 }
 // Display the odd numbers from 20 to 1, counting backwards. (19, 17, 15, ..., 3, 1)
 function kata8(){
-
+    let newElement = document.createElement("article");
+    newElement.className = "articleClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display the odd numbers from 20 to 1, counting backwards. (19, 17, 15, ..., 3, 1)"));
+    newElement.appendChild(headingElement);
+    var tmpStr="";
+    
+    for (let i=19;i>=1;i=i-2){
+        tmpStr+=i + ", ";
+    }
+    tmpStr=tmpStr.slice(0, -2);
+    var newText = document.createTextNode( tmpStr);
+    newElement.appendChild(newText);
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(newElement);
 }
 // Display the multiples of 5, counting down from 100. (100, 95, 90, ..., 10, 5)
 function kata9(){
-
+    let newElement = document.createElement("article");
+    newElement.className = "articleClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display the multiples of 5, counting down from 100. (100, 95, 90, ..., 10, 5)"));
+    newElement.appendChild(headingElement);
+    var tmpStr="";
+     for (let i=100;i>=5;i=i-5){
+        tmpStr+=i + ", ";
+    }
+    tmpStr=tmpStr.slice(0, -2);
+    var newText = document.createTextNode( tmpStr);
+    newElement.appendChild(newText);
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(newElement);
 }
 // Display the square numbers, counting down from 100. (100, 81, 64, ..., 4, 1)
 function kata10(){
-
+    let newElement = document.createElement("article");
+    newElement.className = "articleClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display the square numbers, counting down from 100. (100, 81, 64, ..., 4, 1)"));
+    newElement.appendChild(headingElement);
+    let tmpStr="";
+    for (let i=10;i>=1;i--)
+    {
+        tmpStr+=(i*i)+", ";
+    }
+    tmpStr=tmpStr.slice(0, -2);
+    let newText = document.createTextNode(tmpStr);
+    newElement.appendChild(newText);
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(newElement);
 }
 // Display the 20 elements of sampleArray. (469, 755, 244, ..., 940, 472)
-function kata11(){
-
+function kata11(smplArr){
+    let newElement = document.createElement("article");
+    newElement.className = "articleClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display the 20 elements of sampleArray. (469, 755, 244, ..., 940, 472)"));
+    newElement.appendChild(headingElement);
+    let tmpStr="";
+    for (let i=0;i<20;i++)
+    {
+        tmpStr+=smplArr[i]+", ";
+    }
+    tmpStr=tmpStr.slice(0, -2);
+    let newText = document.createTextNode(tmpStr);
+    newElement.appendChild(newText);
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(newElement);
 }
 // Display all the even numbers contained in sampleArray. (244, 758, 450, ..., 940, 472)
-function kata12(){
-
+function kata12(smplArr){
+    let newElement = document.createElement("article");
+    newElement.className = "articleClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display all the even numbers contained in sampleArray. (244, 758, 450, ..., 940, 472)"));
+    newElement.appendChild(headingElement);
+    let tmpStr="";
+    for (let i=0,j=0;i<smplArr.length && j<20;i++)
+    {
+        if ((smplArr[i]%2)==0){
+            tmpStr+=smplArr[i]+", ";
+            j++;
+        }   
+    }
+    tmpStr=tmpStr.slice(0, -2);
+    let newText = document.createTextNode(tmpStr);
+    newElement.appendChild(newText);
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(newElement);
 }
 // Display all the odd numbers contained in sampleArray. (469, 755, 245, ..., 179, 535)
-function kata13(){
-
+function kata13(smplArr){
+    let newElement = document.createElement("article");
+    newElement.className = "articleClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display all the odd numbers contained in sampleArray. (469, 755, 245, ..., 179, 535)"));
+    newElement.appendChild(headingElement);
+    let tmpStr="";
+    for (let i=0,j=0;i<smplArr.length && j<20;i++)
+    {
+        if ((smplArr[i]%2)!=0){
+            tmpStr+=smplArr[i]+", ";
+            j++;
+        }   
+    }
+    tmpStr=tmpStr.slice(0, -2);
+    let newText = document.createTextNode(tmpStr);
+    newElement.appendChild(newText);
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(newElement);
 }
 // Display the square of each element in sampleArray. (219961, 570025, ..., 222784)
-function kata14(){
-
+function kata14(smplArr){
+    let newElement = document.createElement("article");
+    newElement.className = "articleClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display the square of each element in sampleArray. (219961, 570025, ..., 222784)"));
+    newElement.appendChild(headingElement);
+    let tmpStr="";
+    for (let i=0;i<20;i++)
+    {
+        tmpStr+=(smplArr[i]*smplArr[i])+", ";
+    }
+    tmpStr=tmpStr.slice(0, -2);
+    let newText = document.createTextNode(tmpStr);
+    newElement.appendChild(newText);
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(newElement);
 }
 // Display the sum of all the numbers from 1 to 20.
 function kata15(){
-
+    let newElement = document.createElement("article");
+    newElement.className = "articleClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display the sum of all the numbers from 1 to 20."));
+    newElement.appendChild(headingElement);
+    var tmpStr="";
+    let j=0;
+    for (let i=1;i<=20;i++){
+        j=j+i;
+    }
+    tmpStr+=j;
+    
+    var newText = document.createTextNode( tmpStr);
+    newElement.appendChild(newText);
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(newElement);
 }
 // Display the sum of all the elements in sampleArray.
-function kata16(){
-
+function kata16(smplArr){
+    let newElement = document.createElement("article");
+    newElement.className = "articleClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display the sum of all the elements in sampleArray."));
+    newElement.appendChild(headingElement);
+    var tmpStr="";
+    let j=0;
+    for (let i=0;i<20;i++){
+        j=j+smplArr[i];
+    }
+    tmpStr+=j;
+    
+    var newText = document.createTextNode( tmpStr);
+    newElement.appendChild(newText);
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(newElement);
 }
 // Display the smallest element in sampleArray.
-function kata17(){
-
+function kata17(smplArr){
+    let newElement = document.createElement("article");
+    newElement.className = "articleClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display the smallest element in sampleArray."));
+    newElement.appendChild(headingElement);
+    var tmpStr="";
+    let j=smplArr[0];
+    for (let i=0;i<20;i++){
+        if (smplArr[i]<j)
+          j=smplArr[i];
+    }
+    tmpStr+=j;
+    
+    var newText = document.createTextNode( tmpStr);
+    newElement.appendChild(newText);
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(newElement);
 }
 // Display the largest element in sampleArray.
-function kata18(){
-
+function kata18(smplArr){
+    let newElement = document.createElement("article");
+    newElement.className = "articleClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display the largest element in sampleArray."));
+    newElement.appendChild(headingElement);
+    var tmpStr="";
+    let j=smplArr[0];
+    for (let i=0;i<20;i++){
+        if (smplArr[i]>j)
+          j=smplArr[i];
+    }
+    tmpStr+=j;
+    var newText = document.createTextNode( tmpStr);
+    newElement.appendChild(newText);
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(newElement);
 }
 // Display 20 solid gray rectangles, each 20px high and 100px wide.
 function kata19(){
-
+    let newElement = document.createElement("section");
+    newElement.setAttribute("id", "section1");
+    newElement.className = "sectionClass";
+    let headingElement= document.createElement("h1");
+    headingElement.className = "subHeadingClass";
+    headingElement.appendChild(document.createTextNode("Display 20 solid gray rectangles, each 20px high and 100px wide."));
+    
+    var destination = document.getElementById("mainSection");
+    destination.appendChild(headingElement);
+    destination.appendChild(newElement);
+     
+    destination = document.getElementById("section1");
+    
+    for (i=0;i<20;i++){
+        let newElement1 = document.createElement("div");
+        let newElement2 = document.createElement("div");
+        newElement1.className = "drawRect";
+        newElement2.className="spaceClass";
+        destination.appendChild(newElement1);
+        destination.appendChild(newElement2);
+    }
+    
+     
 }
 // Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above).
 function kata20(){
