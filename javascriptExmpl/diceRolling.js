@@ -3,17 +3,18 @@ function mainFunction(){
     var dice2=0
     var countDice = new Array(12);
     countDice.fill(0,0,12);
-    alert(countDice[0])
+    
     for (let i=0;i<1000;i++){
         dice1=Math.floor((Math.random() * 6) + 1); 
         dice2=Math.floor((Math.random() * 6) + 1); 
         sum = dice1+dice2;
         
-        for (let j=0;j<12;j++)
+        /*for (let j=0;j<12;j++)
          {
              if (sum==(j+1))
                 countDice[j]+=1;
-         }
+         }*/
+         countDice[sum-1]=countDice[sum-1]+1;
     } 
     var destination = document.getElementById("mainSection");
     let newElement1 = document.createElement("div");
