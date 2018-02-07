@@ -13,6 +13,10 @@ function convertNumToWords(){
      {
         tmpNumInStr=""+(i+1);
         var len=tmpNumInStr.length;
+        var special=false;
+        if  (((i+1)%100)>10 && ((i+1)%100)<20){
+            special=true;
+        }
         if ((i+1)>10 && (i+1)<20)
            {
             numInWord= specialName[i-9];
@@ -22,10 +26,16 @@ function convertNumToWords(){
         }  
         else {  
             if (len==3) {
-                numInWord=""+hundredName[parseInt(tmpNumInStr[0])]+" and "+tenName[parseInt(tmpNumInStr[1])]+" "+oneName[parseInt(tmpNumInStr[2])];
+                if (special)
+                   numInWord=""+hundredName[parseInt(tmpNumInStr[0])]+" and "+specialName[parseInt(tmpNumInStr[2])];
+                else 
+                   numInWord=""+hundredName[parseInt(tmpNumInStr[0])]+" and "+tenName[parseInt(tmpNumInStr[1])]+" "+oneName[parseInt(tmpNumInStr[2])];
             }
             else if (len==2){
-                numInWord=""+tenName[parseInt(tmpNumInStr[0])]+" "+oneName[parseInt(tmpNumInStr[1])];  
+                if (special)
+                   numInWord=""+hundredName[parseInt(tmpNumInStr[0])]+" and "+specialName[parseInt(tmpNumInStr[1])];
+                else   
+                   numInWord=""+tenName[parseInt(tmpNumInStr[0])]+" "+oneName[parseInt(tmpNumInStr[1])];  
             }else{
                 numInWord=""+oneName[parseInt(tmpNumInStr[0])];
             }
