@@ -5,15 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript" src="anagrams.js"></script>
+    <script type="text/javascript" src="words.js"></script>
     <title>Anagrams</title>
+    <style>
+    .main{
+        width: 850px;
+        margin: 0 auto;
+        font-family: fantasy;
+    }
+    .headingclass{
+        color: darkblue;
+    }
+    </style>
 </head>
-<body>
+
+<body class="main">
+  <h1 class="headingclass">Find Anagrams</h1>  
   <section>
       <article id="anagrams1">
-        <textarea rows="1" cols="1" id="textInput"></textarea><br>
-        <button id="getAnagram">Anagrams</button>
+        <h3>Enter a word:</h3>  
+        <input type="text" id="textInput"><br>
+        
+        <button id="countButton" onclick="getAnagram()">Anagrams</button>
       </article>
-      <article id="anagram2"></article>
+      <article id="anagram2">
+
+      </article>
   </section>   
 </body>
 </html>
