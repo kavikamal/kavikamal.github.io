@@ -1,0 +1,12 @@
+.headingClass{
+    font-family: Courier New, Courier, monospace;
+    background-color: rgb(223, 197, 126);  
+ }
+.subHeadingClass{
+     font-family: Courier New, Courier, monospace;
+     color:rgb(34, 160, 101);
+ }
+
+.articleClass{
+    padding-left:80px;
+}
