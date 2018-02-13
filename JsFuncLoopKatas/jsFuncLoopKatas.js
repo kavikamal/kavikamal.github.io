@@ -133,6 +133,10 @@ function mainFunction(){
     divDest.appendChild(submitBtn);
     dest.appendChild(divDest);
 
+    fibo2(8);
+    fibo2(9);
+    fibo2(7);
+
 }
     
 function jsFunction(funcNo){
@@ -193,8 +197,9 @@ function multiply(num1,num2){
 //POWER
 function power(num1,num2){
     var result=1;
-    for (let i=0;i<num2;i=i+2){
-        result=multiply(result,multiply(num1,num1));
+    for (let i=0;i<num2;i=i+1){
+       // result=multiply(result,multiply(num1,num1));
+       result= multiply(result,num1);
     }
     return result;
 }
@@ -222,4 +227,17 @@ function appendResult(destDiv,result){
     d.textContent="Result ===>  "+result;
     destDiv.appendChild(d);
     return;
+}
+
+
+function fibo2(num){
+    result1=0;
+    result2=1;
+    for (i=2;i<num;i++)
+         {
+           finalResult= result1+result2;
+           result1=result2;
+           result2=finalResult;  
+         }
+         console.log("Fibo Vlaue ",num,"----",finalResult);
 }
