@@ -303,15 +303,24 @@ function kata19(){
     let newLineElement = document.createElement("br");
     var tmparr=[];
     var k=0;
-    for (let i=0;i<goCitiesArray.length;i++){
+   /* for (let i=0;i<goCitiesArray.length;i++){
         var b = ["aa","ee","ii","oo","uu"];
         console.log(goCitiesArray[i]);
         for (let j=0;j<b.length;j++){
             if  (goCitiesArray[i].includes(b[j]))
                tmparr[k++]=goCitiesArray[i]; 
     }
-    }
-    newElement.textContent = JSON.stringify(tmparr);
+    }*/
+    const b = ["aa","ee","ii","oo","uu"];
+    var newArr=goCitiesArray.filter(function (city)
+    {
+        for(let i=0;i<b.length;i++){
+            if (city.includes(b[i])) return true;
+       }
+        return false;
+    });
+
+    newElement.textContent = JSON.stringify(newArr);
     destination.appendChild(newElement);
 }
 // 20. Find and display all cities from lotrCitiesArray that end with "or"
