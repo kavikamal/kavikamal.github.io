@@ -1,10 +1,10 @@
 .headingClass{
     font-family: Courier New, Courier, monospace;
-    background-color: rgb(223, 197, 126);  
+    background-color: rgb(200, 126, 223);  
  }
 .subHeadingClass{
      font-family: Courier New, Courier, monospace;
-     color:rgb(34, 160, 101);
+     color:rgb(34, 160, 128);
  }
 
 .articleClass{
@@ -13,4 +13,9 @@
 
 .inputClass{
     margin:10px;
+}
+.pClass{
+    margin:10px;
+    font-family: Courier New, Courier, monospace;
+    color:blue;
 }
