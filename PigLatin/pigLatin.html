@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="pigLatin.css" />
+    <script type="text/javascript" src="pigLatin.js"></script>
+    <title>Pig Latin</title>
+</head>
+<body>
+    <section id="mainSection">
+    <h1 class="headingClass">Pig Latin</h1>
+    <form id="myForm">
+        <section class="secClass">
+            <p>Enter Messege to encode to Pig Latin:</p>    
+            <textarea name="userMsg" id="userMsg" cols="40" rows="15"></textarea>
+            <input type="button" value="Encode" name="encode" onclick="document.getElementById('encodedMsg').innerHTML=encodeText(document.getElementById('userMsg').value)" >
+            <textarea name="encodedMsg" id="encodedMsg" cols="40" rows="15" disabled></textarea>
+        </section>
+        <section class="secClass">
+            <p>Enter Pig Latin Messege to decode:</p>
+            <textarea name="pigLatinMsg" id="pigLatinMsg" cols="40" rows="15"></textarea>
+            <input type="button" value="Decode" name="decode" onclick="document.getElementById('decodedMsg').innerHTML=decodeText(document.getElementById('pigLatinMsg').value)">
+            <textarea name="decodedMsg" id="decodedMsg" cols="40" rows="15" disabled></textarea>
+        </section>
+      </form>
+    </section>
+</body>
+</html>
