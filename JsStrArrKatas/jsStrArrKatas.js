@@ -311,15 +311,17 @@ function kata19(){
                tmparr[k++]=goCitiesArray[i]; 
     }
     }*/
-    const b = ["aa","ee","ii","oo","uu"];
-    var newArr=goCitiesArray.filter(function (city)
-    {
-        for(let i=0;i<b.length;i++){
-            if (city.includes(b[i])) return true;
-       }
-        return false;
-    });
-
+    // var b = ["aa","ee","ii","oo","uu"];
+    // var newArr = goCitiesArray.filter(function (city)
+    // {
+    //     for(let i=0;i<b.length;i++){
+    //         if (city.includes(b[i])) return true;
+    //    }
+    //     return false;
+    // });
+    var regexp =/aa|ee|ii|oo|uu/gi;
+    var newArr = goCitiesArray.filter(elem => regexp.test(elem));
+    console.log(newArr);
     newElement.textContent = JSON.stringify(newArr);
     destination.appendChild(newElement);
 }
