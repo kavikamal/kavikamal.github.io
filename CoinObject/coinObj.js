@@ -12,13 +12,13 @@ function flipCoin() {
         toString: function () {
             // return “H” or “T” depending on whether this.state is 0 or 1
             let coinSide;
-            (this.state == 0) ? coinSide = "H" : coinSide = "T";
+            coinSide = (this.state == 0) ? "H" : "T";
             return coinSide;
         },
         toHTML: function () {
             var img = document.createElement("img");
             // set the properties of the image element to show either heads or tails
-            (this.state == 0) ? img.src = "coinhead.png" : img.src = "cointail.png"
+            img.src = (this.state == 0) ? "coinhead.png" : "cointail.png"
             return img;
         }
     };
