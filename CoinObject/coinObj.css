@@ -1,0 +1,47 @@
+body{
+    width:850px;
+    margin:0 auto;
+    background-image: url("background.jpeg");
+}
+
+.flipBoard{
+    text-align: center;
+    height:700px;
+    align-items: center;
+}
+.coinStringDiv{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+    height:100px;
+    text-align: center; 
+   
+}
+.coinImageDiv{
+    
+    height:400px;
+}
+.headingClass{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: blanchedalmond;
+}
+.emptySpace{
+    min-height:50px;
+}
+
+.buttonClass {
+    margin-right: 10px;
+    width: 200px;
+    display: inline-block; 
+    background: #f1c40f;
+    border-bottom: #f39c12 3px solid;
+    border-left: #f39c12 1px solid;
+    border-right: #f39c12 1px solid;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 800;
+  }
