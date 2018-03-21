@@ -262,6 +262,14 @@ function test_findStrExpResult_Kata8() {
         expected: 14,
         result: result,
     });
+    result = findStrExpResult_Kata8({ a: 2, b: 4}, "a + b / a ");
+    console.assert(result === 4, {
+        message: 'Expression Result is wrong ',
+        expression: "a + b / a",
+        input: "{a: 2, b: 4}",
+        expected: 4,
+        result: result,
+    });
 }
 
 var input1 = "string";
